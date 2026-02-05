@@ -27,3 +27,4 @@ static async deleteUserModel(id){
 export default UserModel;
 
 
+

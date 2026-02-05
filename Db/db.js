@@ -19,7 +19,7 @@ const db = mysql.createPool({ //help to maintain multile connnection and definin
 export const connectDB = async () => {
     try {
         const connection = await db.getConnection(); // connecting express and mysql
-        console.log("db connected sucessfully");
+        console.log("mysql connected sucessfully");
         connection.release()
     } catch (err) {
         console.error("connection is not established", err);
